@@ -38,11 +38,11 @@
 	}
 
 	.react-multiple-carousel__arrow--left {
-		left: 15%
+		left: 0%
 	}
 
 	.react-multiple-carousel__arrow--right {
-		right: 15%
+		right: 0%
 	}
 }
 
