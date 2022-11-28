@@ -13,11 +13,13 @@
 }
 
 .personal-info-items .info-item p {
+	/* min-height: 111px; */
     font-weight: 600;
-    font-size: 1.12rem;
+    font-size: 0.8rem;
     padding: 10px 0;
     border-bottom: 1px solid var(--second-text-color);
     margin: 14px 0 25px 0;
+	white-space: nowrap;
 	
 }
 

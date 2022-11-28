@@ -10,7 +10,7 @@ const About = () => {
                     <Col
                         xl={{ span: 4, offset: 2 }}
                         md={{ span: 5, offset: 1 }}
-                        xs={6}
+                        xs={{ span: 6, offset: 0 }}
                     >
                         <div className="info-item">
                             <p>
@@ -56,7 +56,7 @@ const About = () => {
                     <Col
                         xl={{ span: 4, offset: 0 }}
                         md={{ span: 5, offset: 0 }}
-                        xs={6}
+                        xs={{ span: 6, offset: 0 }}
                     >
                         <div className="info-item">
                             <p>
@@ -90,7 +90,7 @@ const About = () => {
                                 <a>
                                     LANGUAGES:
                                     <br />
-                                    <span>ukrainian, english, russian</span>
+                                    <span>english, ukrainian</span>
                                 </a>
                             </p>
                         </div>

@@ -23,3 +23,13 @@
     width: 100%;
     position: relative;
 }
+
+@media (max-width: 576px) {
+	.skills-bx {
+		padding: 60px 20px;
+	}
+}
+
+.react-multiple-carousel__arrow {
+	top: 5px;
+}
