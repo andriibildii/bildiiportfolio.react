@@ -1,8 +1,8 @@
 # Portfolio website by Andrii Bildii with using React
 
-[Deployed App](https:// "Deployed Portfolio")
+[Deployed App](https://bildiiportfolioreact.netlify.app "Deployed Portfolio")
 
-<!-- https:// -->
+<!-- https://bildiiportfolioreact.netlify.app -->
 
 ------------
 ## Technologies
