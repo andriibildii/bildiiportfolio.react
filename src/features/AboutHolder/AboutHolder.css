@@ -24,11 +24,28 @@
     position: relative;
 }
 
+.react-multiple-carousel__arrow--left {
+	left: 17%
+}
+
+.react-multiple-carousel__arrow--right {
+    right: 17%
+}
+
 @media (max-width: 576px) {
 	.skills-bx {
 		padding: 60px 20px;
 	}
+
+	.react-multiple-carousel__arrow--left {
+		left: 15%
+	}
+
+	.react-multiple-carousel__arrow--right {
+		right: 15%
+	}
 }
+
 
 .react-multiple-carousel__arrow {
 	top: 5px;
