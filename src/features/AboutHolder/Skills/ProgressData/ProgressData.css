@@ -1,0 +1,37 @@
+.my-skill {
+    margin: 0.5rem 0;
+}
+
+.my-skill-title {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 1.12rem;
+    color: var(--text-color);
+    opacity: 0.2;
+}
+
+.my-skill-bar {
+    font-weight: 600;
+    font-size: 0.85rem;
+    height: 1.2rem;
+    border-radius: 20px;
+    background-color: var(--skill-bar-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.my-skill-progress {
+    background: linear-gradient(
+        to left,
+        var(--skill-bar-progress-color-end),
+        var(--skill-bar-progress-color-start)
+    );
+    box-shadow: 0 3px 3px -5px var(--back-color), 0 2px 5px var(--back-color);
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    transition: 4s ease 0.3s;
+}

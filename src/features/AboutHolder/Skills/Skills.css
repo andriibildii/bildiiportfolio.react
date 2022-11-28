@@ -1,0 +1,12 @@
+.my-skills {
+    margin-top: 26px;
+}
+
+.my-skills::before {
+    content: 'Skills';
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    opacity: 0.2;
+    line-height: 0;
+}

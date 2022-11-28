@@ -1,0 +1,25 @@
+.skills {
+    padding: 0 0 3.1rem 0;
+    position: relative;
+    background: var(--main-color);
+    background: linear-gradient(
+        5deg,
+        var(--main-color) 0%,
+        var(--main-color) 3%,
+        var(--back-color) 66%
+    );
+}
+
+.skills-bx {
+    background: var(--back-color);
+    opacity: 0.9;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+}
+
+.skills-slider {
+    width: 100%;
+    position: relative;
+}

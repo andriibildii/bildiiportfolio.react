@@ -1,0 +1,125 @@
+.banner {
+    margin-top: 0;
+    padding: 14.3rem 0 14.3rem 0;
+    background-image: url('../../assets/img/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .logo {
+    font-family: Vibur;
+    letter-spacing: 0.8px;
+    font-size: 2.2rem;
+    display: inline-block;
+}
+
+.logo {
+    color: var(--neon-color-body);
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1rem var(--neon-color-shadow),
+        0 0 0.5rem var(--neon-color-shadow), 0 0 0.1rem var(--neon-color-shadow),
+        0 10px 3px var(--neon-color-second);
+}
+
+.logo span {
+    text-shadow: var(--neon-color-second);
+    animation: blink linear infinite 2s;
+}
+
+.logo span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79% {
+        color: var(--neon-color-second);
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: var(--neon-color-second);
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: var(--neon-color-second);
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+.text-container {
+    min-height: 5.6rem;
+}
+
+.banner h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin: 0.6rem 0;
+    display: block;
+}
+
+.banner button {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+}
+
+.banner button svg {
+    font-size: 1.56rem;
+    margin-left: 0.6rem;
+    margin-bottom: 0.1rem;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.banner button:hover svg {
+    margin-left: 1.56rem;
+}
+
+.banner .image-container {
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .image-container img {
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.txt-rotate {
+    border-right: 0.08em solid var(--second-text-color);
+}

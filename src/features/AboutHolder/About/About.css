@@ -1,0 +1,47 @@
+.personal-info-container {
+    max-width: 100%;
+    margin-top: 26px;
+}
+
+.personal-info-container:before {
+    content: 'About';
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    opacity: 0.1;
+    line-height: 0;
+}
+
+.personal-info-items .info-item p {
+    font-weight: 600;
+    font-size: 1.12rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--second-text-color);
+    margin: 14px 0 25px 0;
+	
+}
+
+.personal-info-items .info-item p:hover {
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.personal-info-items .info-item p a span {
+    font-weight: 400;
+    color: var(--main-color);
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+.personal-info-items .info-item p a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.personal-info-items .info-item p a:hover {
+    color: var(--text-color);
+}
+
+.personal-info-items .info-item p a span:hover {
+    color: var(--text-color);
+}
