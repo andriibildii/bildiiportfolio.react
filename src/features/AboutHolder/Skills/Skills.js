@@ -12,7 +12,7 @@ function Skills() {
                     <ProgressData name="Git & GitHub" progress={'35%'} />
                     <ProgressData name="JavaScript" progress={'35%'} />
                     <ProgressData
-                        name="React/Redux/React Router"
+                        name="ReactJS/Redux/React Router"
                         progress={'35%'}
                     />
                     <ProgressData name="TypeScript" progress={'15%'} />
