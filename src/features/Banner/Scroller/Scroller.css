@@ -1,0 +1,77 @@
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.2;
+}
+
+.scroll-icon {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 25px;
+    border: 0.1rem solid white;
+    border-radius: 3rem;
+}
+
+.scroll-icon h2 {
+    font-size: 0.85rem;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+}
+
+.scroll-container._active {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 0.8s ease 1s;
+}
+
+.scroll-icon__wheel-outer {
+    display: block;
+    position: absolute;
+    left: 17%;
+    top: 0.2rem;
+    height: 2.5rem;
+    width: 0.9rem;
+    overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    color: white;
+    animation: scroll 2.75s ease-in-out infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-1.5rem);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(1.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-device-width: 413px) {
+    .scroll-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        position: relative;
+        bottom: 43px;
+        opacity: 0.2;
+    }
+}

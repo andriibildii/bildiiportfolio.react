@@ -74,7 +74,7 @@ function NavBar() {
                             Projects
                         </Nav.Link>
                     </Nav>
-                    <span className="navbar-text">
+                    <span className="social-icons">
                         <SocialIcons />
                     </span>
                 </Navbar.Collapse>

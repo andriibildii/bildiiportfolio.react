@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Scroller from './Scroller/Scroller';
 import Nav from 'react-bootstrap/Nav';
 import { Col, Container, Row } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
@@ -89,6 +90,7 @@ function Banner() {
                         </div>
                     </Col>
                 </Row>
+                <Scroller />
             </Container>
         </section>
     );
