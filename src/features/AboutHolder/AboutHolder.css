@@ -1,12 +1,12 @@
 .skills {
     padding: 0 0 3.1rem 0;
     position: relative;
-    background: rgb(18, 18, 18);
+    background: var(--back-color);
     background: linear-gradient(
         0deg,
-        rgba(18, 18, 18, 1) 1%,
-        rgba(227, 133, 40, 1) 50%,
-        rgba(18, 18, 18, 1) 99%
+        var(--back-color) 1%,
+        var(--main-color) 50%,
+        var(--back-color) 99%
     );
 }
 
@@ -15,8 +15,7 @@
     opacity: 0.9;
     border-radius: 64px;
     text-align: center;
-    padding: 60px 50px;
-    /* margin-top: -60px; */
+    padding: 40px 50px;
 }
 
 .skills-slider {
