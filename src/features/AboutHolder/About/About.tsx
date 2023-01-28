@@ -2,7 +2,7 @@ import getAge from '../../../utils/getAge';
 import { Col, Row } from 'react-bootstrap';
 import './About.css';
 
-const About = () => {
+export const About: React.FC = () => {
     return (
         <div className="item personal-info-container">
             <div className="personal-info-items">
@@ -100,5 +100,3 @@ const About = () => {
         </div>
     );
 };
-
-export default About;

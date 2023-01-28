@@ -1,14 +1,14 @@
-import NavBar from './features/NavBar/NavBar';
-import Banner from './features/Banner/Banner';
-import AboutHolder from './features/AboutHolder/AboutHolder';
-import Projects from './features/Projects/Projects';
-import Contacts from './features/Contacts/Contacts';
-import Footer from './features/Footer/Footer';
+import { NavBar } from './features/NavBar/NavBar';
+import { Banner } from './features/Banner/Banner';
+import { AboutHolder } from './features/AboutHolder/AboutHolder';
+import { Projects } from './features/Projects/Projects';
+import { Contacts } from './features/Contacts/Contacts';
+import { Footer } from './features/Footer/Footer';
 import { Helmet } from 'react-helmet-async';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+const App: React.FC = () => {
     return (
         <div className="App">
             <Helmet>
@@ -30,6 +30,6 @@ function App() {
             <Footer />
         </div>
     );
-}
+};
 
 export default App;

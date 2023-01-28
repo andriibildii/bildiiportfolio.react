@@ -1,8 +1,8 @@
-import SocialIcons from '../../components/SocialIcons/SocialIcons';
+import { SocialIcons } from '../../components/SocialIcons/SocialIcons';
 import { Container, Col, Row } from 'react-bootstrap';
 import './Contacts.css';
 
-const Contacts = () => {
+export const Contacts: React.FC = () => {
     return (
         <Container>
             <div className="contacts-bx wow slideInUp" id="contacts">
@@ -18,5 +18,3 @@ const Contacts = () => {
         </Container>
     );
 };
-
-export default Contacts;

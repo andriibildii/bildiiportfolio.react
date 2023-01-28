@@ -1,22 +1,33 @@
 import { useEffect, useRef } from 'react';
 import './ProgressData.css';
 
-function ProgressData({ name, progress }) {
-    const skillsRef = useRef(null);
-    const progressRef = useRef(null);
+type PropsType = {
+    name: string;
+    progress: string;
+};
+
+const ProgressData: React.FC<PropsType> = ({ name, progress }) => {
+    const skillsRef = useRef<HTMLDivElement | null>(null);
+    const progressRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        const progressData = progressRef.current.dataset;
-        const progressStile = progressRef.current;
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        //@ts-ignore
+        const progressData: string = progressRef.current?.dataset?.progress;
 
-        function checkScroll(el) {
-            let rect = el.getBoundingClientRect();
+        function checkScroll(el: HTMLElement) {
+            const rect = el.getBoundingClientRect();
             return window.innerHeight >= rect.top + el.offsetHeight;
         }
 
         const handleScroll = () => {
-            if (!checkScroll(skillsRef.current)) return;
-            return (progressStile.style.width = progressData.progress);
+            if (skillsRef.current !== null) {
+                if (!checkScroll(skillsRef.current)) return;
+            }
+
+            if (progressRef.current !== null) {
+                progressRef.current.style.width = progressData;
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -24,7 +35,7 @@ function ProgressData({ name, progress }) {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [progress]);
 
     return (
         <div className="my-skill" ref={skillsRef}>
@@ -40,6 +51,6 @@ function ProgressData({ name, progress }) {
             </div>
         </div>
     );
-}
+};
 
 export default ProgressData;

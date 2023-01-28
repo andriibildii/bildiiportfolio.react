@@ -1,7 +1,7 @@
 import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa';
 import './SocialIcons.css';
 
-const SocialIcons = () => {
+export const SocialIcons: React.FC = () => {
     return (
         <div className="social-icon">
             <a
@@ -19,5 +19,3 @@ const SocialIcons = () => {
         </div>
     );
 };
-
-export default SocialIcons;

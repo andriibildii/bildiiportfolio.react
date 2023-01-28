@@ -8,8 +8,9 @@ https://bildiiportfolioreact.netlify.app
 
 ## Technologies
 
--   React
--   React-bootstrap
--   React-helmet-async for SEO
+- React
+- TypeScript
+- React-bootstrap
+- React-helmet-async for SEO
 
 ---

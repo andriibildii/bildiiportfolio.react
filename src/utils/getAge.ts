@@ -1,10 +1,10 @@
-export default function getAge(dateString) {
+export default function getAge(dateString: string): number {
     let date = dateString;
     const initial = date.split('/');
 
-    if (initial[0] <= 12) {
+    if (initial[0] <= '12') {
         date = dateString;
-    } else if (initial[0] > 12) {
+    } else if (initial[0] > '12') {
         date = [initial[1], initial[0], initial[2]].join('/');
     }
 

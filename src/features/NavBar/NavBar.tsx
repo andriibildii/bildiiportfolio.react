@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import SocialIcons from '../../components/SocialIcons/SocialIcons';
+import { SocialIcons } from '../../components/SocialIcons/SocialIcons';
 import './NavBar.css';
 
-function NavBar() {
+export const NavBar: React.FC = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
@@ -23,7 +23,7 @@ function NavBar() {
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
-    const onUpdateActiveLink = value => {
+    const onUpdateActiveLink = (value: string) => {
         setActiveLink(value);
     };
 
@@ -81,6 +81,4 @@ function NavBar() {
             </Container>
         </Navbar>
     );
-}
-
-export default NavBar;
+};

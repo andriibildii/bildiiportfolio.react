@@ -4,12 +4,40 @@ import { FaGithub, FaChrome } from 'react-icons/fa';
 import './ProjectCard.css';
 import VanillaTilt from 'vanilla-tilt';
 
-function ProjectCard({ title, description, tools, gitUrl, appIrl, imgUrl }) {
-    function Tilt(props) {
+type PropsType = {
+    title: string;
+    description: string;
+    tools: string;
+    gitUrl: string;
+    appIrl: string;
+    imgUrl: string;
+};
+
+type TiltPropsType = {
+    children: React.ReactNode;
+    className: string;
+    id: string;
+    options: {
+        glare: boolean;
+        'max-glare': number;
+    };
+};
+
+const ProjectCard: React.FC<PropsType> = ({
+    title,
+    description,
+    tools,
+    gitUrl,
+    appIrl,
+    imgUrl,
+}) => {
+    function Tilt(props: TiltPropsType) {
         const { options, ...rest } = props;
-        const tilt = useRef(null);
+        const tilt = useRef<HTMLDivElement | null>(null);
 
         useEffect(() => {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            //@ts-ignore
             VanillaTilt.init(tilt.current, options);
         }, [options]);
 
@@ -45,6 +73,6 @@ function ProjectCard({ title, description, tools, gitUrl, appIrl, imgUrl }) {
             </div>
         </Tilt>
     );
-}
+};
 
 export default ProjectCard;

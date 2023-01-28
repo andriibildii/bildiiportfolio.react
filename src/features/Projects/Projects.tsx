@@ -2,6 +2,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import cryptoInfo from '../../assets/img/ctyptoInfo.png';
 import goReddit from '../../assets/img/go-reddit.png';
 import loginRegister from '../../assets/img/login-register.png';
 import rhythm from '../../assets/img/jammingL.png';
@@ -10,8 +11,16 @@ import appointment from '../../assets/img/appointment.png';
 import lawFirm from '../../assets/img/lawfirm.png';
 import './Projects.css';
 
-function Projects() {
+export const Projects: React.FC = () => {
     const projects = [
+        {
+            title: 'CryptoInfo',
+            description: 'SPA with using RapidAPI',
+            tools: 'React/RTK Query/RapidAPI/Ant Design',
+            gitUrl: 'https://github.com/andriibildii/crypto-info',
+            appIrl: 'https://webcryptoinfo.netlify.app',
+            imgUrl: cryptoInfo,
+        },
         {
             title: 'Go/Reddit',
             description: "SPA with using Reddit's API",
@@ -105,6 +114,4 @@ function Projects() {
             </Container>
         </section>
     );
-}
-
-export default Projects;
+};

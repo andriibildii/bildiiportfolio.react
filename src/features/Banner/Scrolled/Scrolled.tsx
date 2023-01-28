@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import './Scroller.css';
+import './Scrolled.css';
 
-function Scroller() {
+const Scrolled: React.FC = () => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -19,18 +19,20 @@ function Scroller() {
     }, []);
 
     return (
-        !scrolled && (
-            <div className="scroll-container">
-                <span className="scroll-icon">
-                    <span className="scroll-icon__wheel-outer">
-                        <span className="scroll-icon__wheel-inner">
-                            <h2>scroll</h2>
+        <>
+            {!scrolled && (
+                <div className="scroll-container">
+                    <span className="scroll-icon">
+                        <span className="scroll-icon__wheel-outer">
+                            <span className="scroll-icon__wheel-inner">
+                                <h2>scroll</h2>
+                            </span>
                         </span>
                     </span>
-                </span>
-            </div>
-        )
+                </div>
+            )}
+        </>
     );
-}
+};
 
-export default Scroller;
+export default Scrolled;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Scroller from './Scroller/Scroller';
+import Scrolled from './Scrolled/Scrolled';
 import Nav from 'react-bootstrap/Nav';
 import { Col, Container, Row } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
@@ -7,8 +7,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../../assets/img/header-img.png';
 import './Banner.css';
 
-
-function Banner() {
+export const Banner: React.FC = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ['developer...', 'front-end developer!'];
@@ -17,7 +16,7 @@ function Banner() {
     const period = 2000;
 
     useEffect(() => {
-        let ticker = setInterval(() => {
+        const ticker = setInterval(() => {
             tick();
         }, delta);
 
@@ -27,9 +26,9 @@ function Banner() {
     }, [text]);
 
     const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updateText = isDeleting
+        const i = loopNum % toRotate.length;
+        const fullText = toRotate[i];
+        const updateText = isDeleting
             ? fullText.substring(0, text.length - 1)
             : fullText.substring(0, text.length + 1);
 
@@ -74,7 +73,7 @@ function Banner() {
                                             </span>
                                         </h1>
                                     </div>
-                                    <button onClick={() => {}}>
+                                    <button>
                                         <Nav.Link href="#contacts">
                                             Let&apos;s Connect
                                             <ArrowRightCircle size={25} />
@@ -90,10 +89,8 @@ function Banner() {
                         </div>
                     </Col>
                 </Row>
-                <Scroller />
+                <Scrolled />
             </Container>
         </section>
     );
-}
-
-export default Banner;
+};
