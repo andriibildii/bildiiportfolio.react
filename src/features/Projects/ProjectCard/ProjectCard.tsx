@@ -9,7 +9,7 @@ type PropsType = {
     description: string;
     tools: string;
     gitUrl: string;
-    appIrl: string;
+    appUrl?: string;
     imgUrl: string;
 };
 
@@ -28,7 +28,7 @@ const ProjectCard: React.FC<PropsType> = ({
     description,
     tools,
     gitUrl,
-    appIrl,
+    appUrl,
     imgUrl,
 }) => {
     function Tilt(props: TiltPropsType) {
@@ -66,7 +66,7 @@ const ProjectCard: React.FC<PropsType> = ({
                     </a>
                 </div>
                 <div className="code border-r">
-                    <a href={appIrl} target="_blank" rel="noreferrer">
+                    <a href={appUrl} target="_blank" rel="noreferrer">
                         <FaChrome className="chrome" />
                     </a>
                 </div>

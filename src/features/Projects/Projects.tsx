@@ -2,6 +2,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import socialPlatform from '../../assets/img/SP.png';
 import cryptoInfo from '../../assets/img/ctyptoInfo.png';
 import goReddit from '../../assets/img/go-reddit.png';
 import loginRegister from '../../assets/img/login-register.png';
@@ -14,9 +15,16 @@ import './Projects.css';
 export const Projects: React.FC = () => {
     const projects = [
         {
+            title: 'SocialPlatform',
+            description: 'SPA of Social Platform',
+            tools: 'ReactJS/TypeScript/React Redux/Axios/Material UI',
+            gitUrl: 'https://github.com/andriibildii/social_platform',
+            imgUrl: socialPlatform,
+        },
+        {
             title: 'CryptoInfo',
             description: 'SPA with using RapidAPI',
-            tools: 'React/RTK Query/RapidAPI/Ant Design',
+            tools: 'ReactJS/RTK Query/RapidAPI/Ant Design',
             gitUrl: 'https://github.com/andriibildii/crypto-info',
             appIrl: 'https://webcryptoinfo.netlify.app',
             imgUrl: cryptoInfo,
@@ -24,7 +32,7 @@ export const Projects: React.FC = () => {
         {
             title: 'Go/Reddit',
             description: "SPA with using Reddit's API",
-            tools: 'React/Redux Toolkit/React Router/Fetch API',
+            tools: 'ReactJS/Redux Toolkit/React Router/Fetch API',
             gitUrl: 'https://github.com/andriibildii/go-reddit',
             appIrl: 'https://go-reddit.netlify.app',
             imgUrl: goReddit,
@@ -32,7 +40,7 @@ export const Projects: React.FC = () => {
         {
             title: 'Login-Register',
             description: 'Login-Register Form with home page',
-            tools: 'React/Redux Toolkit/React Router/Firebase',
+            tools: 'ReactJS/Redux Toolkit/React Router/Firebase',
             gitUrl: 'https://github.com/andriibildii/go-reddit',
             appIrl: 'https://login-register-app-react.netlify.app/login',
             imgUrl: loginRegister,
@@ -40,7 +48,7 @@ export const Projects: React.FC = () => {
         {
             title: 'Find your rhythm',
             description: 'Making playlists With the Spotify API',
-            tools: 'React/async requests',
+            tools: 'ReactJS/async requests',
             gitUrl: 'https://github.com/andriibildii/jammming',
             appIrl: 'https://find-your-rhythm.surge.sh',
             imgUrl: rhythm,
@@ -57,7 +65,7 @@ export const Projects: React.FC = () => {
         {
             title: 'Appointment Planner',
             description: 'Manage contacts and appointments',
-            tools: 'React/React Router',
+            tools: 'ReactJS/React Router',
             gitUrl: 'https://github.com/andriibildii/appointment-planner',
             appIrl: 'https://bildii-appointment-planner.netlify.app',
             imgUrl: appointment,

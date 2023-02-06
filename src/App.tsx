@@ -7,6 +7,7 @@ import { Footer } from './features/Footer/Footer';
 import { Helmet } from 'react-helmet-async';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Certificates } from './features/Certificates/Certificates';
 
 const App: React.FC = () => {
     return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
             <Banner />
             <AboutHolder />
             <Projects />
+			<Certificates />
             <Contacts />
             <Footer />
         </div>

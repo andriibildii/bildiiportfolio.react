@@ -73,6 +73,17 @@ export const NavBar: React.FC = () => {
                         >
                             Projects
                         </Nav.Link>
+                        <Nav.Link
+                            href="#certificates"
+                            className={
+                                activeLink === 'certificates'
+                                    ? 'active navbar-link'
+                                    : 'navbar-link'
+                            }
+                            onClick={() => onUpdateActiveLink('certificates')}
+                        >
+                            Certificates
+                        </Nav.Link>
                     </Nav>
                     <span className="social-icons">
                         <SocialIcons />
