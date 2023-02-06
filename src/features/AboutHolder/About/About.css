@@ -18,7 +18,7 @@
     padding: 10px 0;
     border-bottom: 1px solid var(--second-text-color);
     margin: 14px 0 25px 0;
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .personal-info-items .info-item p:hover {

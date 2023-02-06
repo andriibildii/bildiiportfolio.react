@@ -57,7 +57,7 @@ export const Certificates: React.FC = () => {
                                             return (
                                                 <motion.div
                                                     key={index}
-                                                    className="item"
+                                                    className="certificates"
                                                 >
                                                     <img
                                                         src={image}
