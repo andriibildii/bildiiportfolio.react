@@ -2,14 +2,14 @@ import ProjectCard from './ProjectCard/ProjectCard';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import socialPlatform from '../../assets/img/SP.png';
-import cryptoInfo from '../../assets/img/ctyptoInfo.png';
-import goReddit from '../../assets/img/go-reddit.png';
-import loginRegister from '../../assets/img/login-register.png';
-import rhythm from '../../assets/img/jammingL.png';
-import flashcards from '../../assets/img/flashcards.png';
-import appointment from '../../assets/img/appointment.png';
-import lawFirm from '../../assets/img/lawfirm.png';
+import socialPlatform from '../../assets/img/SP.webp';
+import cryptoInfo from '../../assets/img/ctyptoInfo.webp';
+import goReddit from '../../assets/img/go-reddit.webp';
+import loginRegister from '../../assets/img/login-register.webp';
+import rhythm from '../../assets/img/jammingL.webp';
+import flashcards from '../../assets/img/flashcards.webp';
+import appointment from '../../assets/img/appointment.webp';
+import lawFirm from '../../assets/img/lawfirm.webp';
 import './Projects.css';
 
 export const Projects: React.FC = () => {
