@@ -19,6 +19,7 @@ export const Projects: React.FC = () => {
             description: 'SPA of Social Platform',
             tools: 'ReactJS/TypeScript/React Redux/Axios/Material UI',
             gitUrl: 'https://github.com/andriibildii/social_platform',
+            appUrl: 'https://social-platform-bildii.netlify.app',
             imgUrl: socialPlatform,
         },
         {
@@ -26,7 +27,7 @@ export const Projects: React.FC = () => {
             description: 'SPA with using RapidAPI',
             tools: 'ReactJS/RTK Query/RapidAPI/Ant Design',
             gitUrl: 'https://github.com/andriibildii/crypto-info',
-            appIrl: 'https://webcryptoinfo.netlify.app',
+            appUrl: 'https://webcryptoinfo.netlify.app',
             imgUrl: cryptoInfo,
         },
         {
@@ -34,7 +35,7 @@ export const Projects: React.FC = () => {
             description: "SPA with using Reddit's API",
             tools: 'ReactJS/Redux Toolkit/React Router/Fetch API',
             gitUrl: 'https://github.com/andriibildii/go-reddit',
-            appIrl: 'https://go-reddit.netlify.app',
+            appUrl: 'https://go-reddit.netlify.app',
             imgUrl: goReddit,
         },
         {
@@ -42,7 +43,7 @@ export const Projects: React.FC = () => {
             description: 'Login-Register Form with home page',
             tools: 'ReactJS/Redux Toolkit/React Router/Firebase',
             gitUrl: 'https://github.com/andriibildii/go-reddit',
-            appIrl: 'https://login-register-app-react.netlify.app/login',
+            appUrl: 'https://login-register-app-react.netlify.app/login',
             imgUrl: loginRegister,
         },
         {
@@ -50,7 +51,7 @@ export const Projects: React.FC = () => {
             description: 'Making playlists With the Spotify API',
             tools: 'ReactJS/async requests',
             gitUrl: 'https://github.com/andriibildii/jammming',
-            appIrl: 'https://find-your-rhythm.surge.sh',
+            appUrl: 'https://find-your-rhythm.surge.sh',
             imgUrl: rhythm,
         },
         {
@@ -59,7 +60,7 @@ export const Projects: React.FC = () => {
                 'App for create topics, quizzes for those topics, and flashcards for those quizzes',
             tools: 'Redux/Redux Toolkit',
             gitUrl: 'https://github.com/andriibildii/flashcards',
-            appIrl: 'https://bildii-flashcards.netlify.app',
+            appUrl: 'https://bildii-flashcards.netlify.app',
             imgUrl: flashcards,
         },
         {
@@ -67,7 +68,7 @@ export const Projects: React.FC = () => {
             description: 'Manage contacts and appointments',
             tools: 'ReactJS/React Router',
             gitUrl: 'https://github.com/andriibildii/appointment-planner',
-            appIrl: 'https://bildii-appointment-planner.netlify.app',
+            appUrl: 'https://bildii-appointment-planner.netlify.app',
             imgUrl: appointment,
         },
         {
@@ -75,7 +76,7 @@ export const Projects: React.FC = () => {
             description: 'Landing page for the law firm',
             tools: 'HTML/CSS',
             gitUrl: 'https://github.com/andriibildii/law_firm',
-            appIrl: 'https://andriibildii.github.io/law_firm',
+            appUrl: 'https://andriibildii.github.io/law_firm',
             imgUrl: lawFirm,
         },
     ];

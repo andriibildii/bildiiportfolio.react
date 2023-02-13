@@ -9,7 +9,7 @@ type PropsType = {
     description: string;
     tools: string;
     gitUrl: string;
-    appUrl?: string;
+    appUrl: string;
     imgUrl: string;
 };
 
