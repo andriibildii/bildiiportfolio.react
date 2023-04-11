@@ -5,15 +5,24 @@ import TrackVisibility from 'react-on-screen';
 import socialPlatform from '../../assets/img/SP.webp';
 import cryptoInfo from '../../assets/img/ctyptoInfo.webp';
 import goReddit from '../../assets/img/go-reddit.webp';
-import loginRegister from '../../assets/img/login-register.webp';
+// import loginRegister from '../../assets/img/login-register.webp';
 import rhythm from '../../assets/img/jammingL.webp';
-import flashcards from '../../assets/img/flashcards.webp';
-import appointment from '../../assets/img/appointment.webp';
+// import flashcards from '../../assets/img/flashcards.webp';
+// import appointment from '../../assets/img/appointment.webp';
 import lawFirm from '../../assets/img/lawfirm.webp';
+import discussIt from '../../assets/img/discussit.png';
 import './Projects.css';
 
 export const Projects: React.FC = () => {
     const projects = [
+        {
+            title: 'DiscussIt',
+            description: 'Create and comment posts',
+            tools: 'Next.JS/TypeScript/TailwindCSS/NextAuth/Prisma',
+            gitUrl: 'https://github.com/andriibildii/discuss-it-web',
+            appUrl: 'https://discuss-it-web.vercel.app/',
+            imgUrl: discussIt,
+        },
         {
             title: 'SocialPlatform',
             description: 'SPA of Social Platform',
@@ -38,14 +47,14 @@ export const Projects: React.FC = () => {
             appUrl: 'https://go-reddit.netlify.app',
             imgUrl: goReddit,
         },
-        {
-            title: 'Login-Register',
-            description: 'Login-Register Form with home page',
-            tools: 'ReactJS/Redux Toolkit/React Router/Firebase',
-            gitUrl: 'https://github.com/andriibildii/go-reddit',
-            appUrl: 'https://login-register-app-react.netlify.app/login',
-            imgUrl: loginRegister,
-        },
+        // {
+        //     title: 'Login-Register',
+        //     description: 'Login-Register Form with home page',
+        //     tools: 'ReactJS/Redux Toolkit/React Router/Firebase',
+        //     gitUrl: 'https://github.com/andriibildii/go-reddit',
+        //     appUrl: 'https://login-register-app-react.netlify.app/login',
+        //     imgUrl: loginRegister,
+        // },
         {
             title: 'Find your rhythm',
             description: 'Making playlists With the Spotify API',
@@ -54,23 +63,23 @@ export const Projects: React.FC = () => {
             appUrl: 'https://find-your-rhythm.surge.sh',
             imgUrl: rhythm,
         },
-        {
-            title: 'Flashcards',
-            description:
-                'App for create topics, quizzes for those topics, and flashcards for those quizzes',
-            tools: 'Redux/Redux Toolkit',
-            gitUrl: 'https://github.com/andriibildii/flashcards',
-            appUrl: 'https://bildii-flashcards.netlify.app',
-            imgUrl: flashcards,
-        },
-        {
-            title: 'Appointment Planner',
-            description: 'Manage contacts and appointments',
-            tools: 'ReactJS/React Router',
-            gitUrl: 'https://github.com/andriibildii/appointment-planner',
-            appUrl: 'https://bildii-appointment-planner.netlify.app',
-            imgUrl: appointment,
-        },
+        // {
+        //     title: 'Flashcards',
+        //     description:
+        //         'App for create topics, quizzes for those topics, and flashcards for those quizzes',
+        //     tools: 'Redux/Redux Toolkit',
+        //     gitUrl: 'https://github.com/andriibildii/flashcards',
+        //     appUrl: 'https://bildii-flashcards.netlify.app',
+        //     imgUrl: flashcards,
+        // },
+        // {
+        //     title: 'Appointment Planner',
+        //     description: 'Manage contacts and appointments',
+        //     tools: 'ReactJS/React Router',
+        //     gitUrl: 'https://github.com/andriibildii/appointment-planner',
+        //     appUrl: 'https://bildii-appointment-planner.netlify.app',
+        //     imgUrl: appointment,
+        // },
         {
             title: 'Law Firm',
             description: 'Landing page for the law firm',
