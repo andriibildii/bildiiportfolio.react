@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import { Col, Container, Row } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from '../../assets/img/header-img.png';
+import headerImg from '../../assets/img//header-img.png';
 import './Banner.css';
 
 export const Banner: React.FC = () => {

@@ -1,20 +1,37 @@
 import ProjectCard from './ProjectCard/ProjectCard';
 import { Col, Container, Row } from 'react-bootstrap';
-import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import socialPlatform from '../../assets/img/SP.webp';
 import cryptoInfo from '../../assets/img/ctyptoInfo.webp';
 import goReddit from '../../assets/img/go-reddit.webp';
-// import loginRegister from '../../assets/img/login-register.webp';
 import rhythm from '../../assets/img/jammingL.webp';
-// import flashcards from '../../assets/img/flashcards.webp';
-// import appointment from '../../assets/img/appointment.webp';
 import lawFirm from '../../assets/img/lawfirm.webp';
 import discussIt from '../../assets/img/discussit.png';
+import hdmovies from '../../assets/img/hdmovies.png';
+import contactPage from '../../assets/img/contactPage.png';
+import 'animate.css';
 import './Projects.css';
 
 export const Projects: React.FC = () => {
     const projects = [
+        {
+            title: 'Contact page',
+            description:
+                'Template of contact page with the ability to send customers information and subscribe to news',
+            tools: 'React/TypeScript/React Hook Form/React-Query/TailwindCSS/Headlessui/Vite',
+            gitUrl: 'https://github.com/andriibildii/contact-page',
+            appUrl: 'https://contact-page-bildii.vercel.app',
+            imgUrl: contactPage,
+        },
+        {
+            title: 'HDMovies',
+            description:
+                'Movie search application using Next.js 13 and the OMDB API',
+            tools: 'Next.JS/TypeScript/TailwindCSS/Redux Toolkit/ OMDB API',
+            gitUrl: 'https://github.com/andriibildii/hdmovies',
+            appUrl: 'https://hdmovies.vercel.app',
+            imgUrl: hdmovies,
+        },
         {
             title: 'DiscussIt',
             description: 'Create and comment posts',
@@ -47,14 +64,6 @@ export const Projects: React.FC = () => {
             appUrl: 'https://go-reddit.netlify.app',
             imgUrl: goReddit,
         },
-        // {
-        //     title: 'Login-Register',
-        //     description: 'Login-Register Form with home page',
-        //     tools: 'ReactJS/Redux Toolkit/React Router/Firebase',
-        //     gitUrl: 'https://github.com/andriibildii/go-reddit',
-        //     appUrl: 'https://login-register-app-react.netlify.app/login',
-        //     imgUrl: loginRegister,
-        // },
         {
             title: 'Find your rhythm',
             description: 'Making playlists With the Spotify API',
@@ -63,23 +72,6 @@ export const Projects: React.FC = () => {
             appUrl: 'https://find-your-rhythm.surge.sh',
             imgUrl: rhythm,
         },
-        // {
-        //     title: 'Flashcards',
-        //     description:
-        //         'App for create topics, quizzes for those topics, and flashcards for those quizzes',
-        //     tools: 'Redux/Redux Toolkit',
-        //     gitUrl: 'https://github.com/andriibildii/flashcards',
-        //     appUrl: 'https://bildii-flashcards.netlify.app',
-        //     imgUrl: flashcards,
-        // },
-        // {
-        //     title: 'Appointment Planner',
-        //     description: 'Manage contacts and appointments',
-        //     tools: 'ReactJS/React Router',
-        //     gitUrl: 'https://github.com/andriibildii/appointment-planner',
-        //     appUrl: 'https://bildii-appointment-planner.netlify.app',
-        //     imgUrl: appointment,
-        // },
         {
             title: 'Law Firm',
             description: 'Landing page for the law firm',
