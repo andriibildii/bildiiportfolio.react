@@ -16,9 +16,8 @@ export const Projects: React.FC = () => {
     const projects = [
         {
             title: 'Contact page',
-            description:
-                'Template of contact page with the ability to send customers information and subscribe to news',
-            tools: 'React/TypeScript/React Hook Form/React-Query/TailwindCSS/Headlessui/Vite',
+            description: 'Template of responsive contact page',
+            tools: 'React/TypeScript/React Hook Form/React-Query/TailwindCSS/Vite',
             gitUrl: 'https://github.com/andriibildii/contact-page',
             appUrl: 'https://contact-page-bildii.vercel.app',
             imgUrl: contactPage,
